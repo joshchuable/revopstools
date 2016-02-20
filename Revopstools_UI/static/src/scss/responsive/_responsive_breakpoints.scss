@@ -1,0 +1,10 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 768px;
+$screen-sm-min: 480px;
+$screen-sm-max: "only screen and (max-width: 480px)";
+$screen-md-max: "only screen and (max-width: 768px)";
+
+/*Prevent Overflow Issue*/
+.container-small, .container-large {
+    max-width: 100%;
+}
