@@ -1,9 +1,7 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	sass = require('gulp-ruby-sass'),
-	postcss = require('gulp-postcss'),
-	csswring = require('csswring'),
-	autoprefixer = require('autoprefixer-core');
+	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['scripts', 'watch']);
 
@@ -22,34 +20,36 @@ gulp.task('scripts', function(){
 gulp.task('watch', function(){
 	// Watch files location, then run the follow scripts
 	gulp.watch('static/src/js/*.js', ['scripts']);
-	gulp.watch('static/src/scss/**/*.scss', ['styles', 'css']);
+	gulp.watch('static/src/scss/**/*.scss', ['styles', 'build_css']);
 });
 
 // Styles Task
-// Compiles CSS/Sass
+// Compiles CSS/Sass for Debugging
 gulp.task('styles', function(){
 	// Source
-	return sass('static/src/scss/scss.scss')
+	return sass('static/src/scss/style.scss', {
+		style: 'expanded'
+	})
+	.pipe(autoprefixer({
+		browsers: ['last 3 versions'],
+		cascade: false
+	}))
 	// Destination
-	.pipe(gulp.dest('static/src/css_debug/css_debug.css'));
+	.pipe(gulp.dest('static/src/css_debug/'));
 });
 
-// Post CSS
-gulp.task('css', function () {
-
-	var processors = [
-		csswring({
-			preserveHacks: true
-		}),
-		autoprefixer({
-			browsers:['last 3 version']
-		})
-	];
-
-    return sass('static/src/css_debug/css_debug.css', {
-		style: 'compressed',
+// Build CSS Task
+// Compiles CSS/Sass
+gulp.task('build_css', function(){
+	// Source
+	return sass('static/src/scss/style.scss', {
+		style: 'compressed'
 	})
-        .pipe( postcss(processors) )
-        .pipe( gulp.dest('static/build/css/style.css') );
+	.pipe(autoprefixer({
+		browsers: ['last 3 versions'],
+		cascade: false
+	}))
+	// Destination
+	.pipe(gulp.dest('static/build/css/'));
 });
 

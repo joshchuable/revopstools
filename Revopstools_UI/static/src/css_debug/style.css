@@ -1,0 +1,14 @@
+/* BASIC SETTINGS - The Other Elements of the CSS File. */
+body {
+  font-size: 12px;
+}
+
+/* RESPONSIVE - The Other Elements of the CSS File. */
+.container-small,
+.container-large {
+  max-width: 100%;
+}
+
+/* CUSTOM VARIABLES - The Other Elements of the CSS File. */
+/* PAGES - The Other Elements of the CSS File. */
+/* MISC - The Other Elements of the CSS File. */
