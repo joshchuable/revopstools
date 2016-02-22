@@ -1,13 +1,20 @@
-@charset "utf-8";
-
-/* BASIC SETTINGS - The Other Elements of the CSS File. */
+/* BASIC SETTINGS
+============================================================= */
 @import 'basic_settings/_basic_settings.scss';
 
-/* RESPONSIVE - The Other Elements of the CSS File. */
+/* CUSTOM VARIABLES
+============================================================= */
+
+/* GRID
+============================================================= */
+@import 'grid/_foundation_grid.scss';
+
+/* RESPONSIVE
+============================================================= */
 @import 'responsive/_responsive_breakpoints.scss';
 
-/* CUSTOM VARIABLES - The Other Elements of the CSS File. */
+/* PAGES
+============================================================= */
 
-/* PAGES - The Other Elements of the CSS File. */
-
-/* MISC - The Other Elements of the CSS File. */
+/* MISC
+============================================================= */

@@ -1,3 +1,17 @@
-<!doctype html>
-
-<link rel="stylesheet" href="{{ url_for('static/build', filename='style.css') }}">
+<!DOCTYPE html>
+<html>
+<head>
+	{% include "head.html" %}
+</head>
+<body>
+	<nav>
+		{% include "nav.html" %}
+	</nav>
+	<main id="content">
+		{% block content %}{% endblock %}
+	</main>
+	<footer>
+		{% include "footer.html" %}
+	</footer>
+</body>
+</html>
