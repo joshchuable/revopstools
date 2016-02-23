@@ -1,11 +1,14 @@
+/* CUSTOM VARIABLES
+============================================================= */
+/*** COLORS ***/
 /* BASIC SETTINGS
 ============================================================= */
 body {
   font-size: 12px;
+  color: #1b1b1b;
+  margin: 0;
 }
 
-/* CUSTOM VARIABLES
-============================================================= */
 /* GRID
 ============================================================= */
 .row {
@@ -1210,7 +1213,62 @@ body {
   max-width: 100%;
 }
 
-/* PAGES
+/* ELEMENTS
 ============================================================= */
+nav {
+  background-color: #c6c6c6;
+  border-bottom: 1px solid #adadad;
+  height: 48px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  font-weight: 700;
+  color: #1b1b1b;
+  padding: 4px;
+  margin: 4px;
+  position: relative;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul a {
+  padding: 4px;
+  margin: 4px;
+}
+nav .nav-menu-left {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: auto;
+}
+nav .nav-menu-right {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 /* MISC
 ============================================================= */
