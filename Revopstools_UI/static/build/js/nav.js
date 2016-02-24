@@ -1,1 +1,1 @@
-$(document).ready(function(){var n=$(nav).offset().top,o=function(){var o=$(window).scrollTop();o>n?$(nav).addClass("sticky"):$(nav).removeClass("sticky")};o(),$(window).scroll(function(){o()})});
+$(document).ready(function(){var o=$("nav").offset().top,n=function(){var n=$(window).scrollTop();n>o?$(nav).addClass("sticky"):$(nav).removeClass("sticky")};n(),$(window).scroll(function(){n()})}),$(function(){$("valueCPM_button").click(function(){$.ajax({url:"/pyscripts/valueCPM_calc",type:"POST",success:function(o){console.log(o)},error:function(o){console.log(erorr)}})})});

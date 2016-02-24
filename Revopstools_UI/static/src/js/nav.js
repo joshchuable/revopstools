@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var stickyNavTop = $(nav).offset().top;
+	var stickyNavTop = $("nav").offset().top;
 
 	var stickyNav = function() {
 	var scrollTop = $(window).scrollTop();
@@ -16,5 +16,20 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
 		stickyNav();
+	});
+});
+
+$(function() {
+	$('valueCPM_button').click(function() {
+		$.ajax({
+			url: '/pyscripts/valueCPM_calc',
+			type: 'POST',
+			success: function(response) {
+				console.log(response);
+			},
+			error: function(error) {
+				console.log(erorr);
+			}
+		});
 	});
 });

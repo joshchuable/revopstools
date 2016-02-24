@@ -1,17 +1,21 @@
 /* CUSTOM VARIABLES
 ============================================================= */
 /*** COLORS ***/
-/* BASIC SETTINGS
+/* RESPONSIVE
 ============================================================= */
-body {
-  font-size: 12px;
-  font-family: 'Lato', sans-serif;
-  color: #1b1b1b;
-  margin: 0;
+.container-small,
+.container-large {
+  max-width: 100%;
 }
 
 /* GRID
 ============================================================= */
+#content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
   max-width: rem-calc(1200);
   margin-left: auto;
@@ -1207,11 +1211,13 @@ body {
     float: left;
   }
 }
-/* RESPONSIVE
+/* BASIC SETTINGS
 ============================================================= */
-.container-small,
-.container-large {
-  max-width: 100%;
+body {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #1b1b1b;
+  margin: 0;
 }
 
 /* ELEMENTS
@@ -1284,6 +1290,20 @@ nav .nav-menu-right {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.valueCPM_button {
+  padding: 8px 12px;
+  background-color: #0066cc;
+  border-bottom: 3px solid #00478f;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.valueCPM_button:hover {
+  background-color: #0080ff;
+  border-bottom: 3px solid #004d99;
 }
 
 /* MISC
