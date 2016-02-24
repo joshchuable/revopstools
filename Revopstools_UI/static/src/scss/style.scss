@@ -2,17 +2,17 @@
 ============================================================= */
 @import 'custom_variables/_custom_variables.scss';
 
-/* BASIC SETTINGS
+/* RESPONSIVE
 ============================================================= */
-@import 'basic_settings/_basic_settings.scss';
+@import 'responsive/_responsive_breakpoints.scss';
 
 /* GRID
 ============================================================= */
 @import 'grid/_foundation_grid.scss';
 
-/* RESPONSIVE
+/* BASIC SETTINGS
 ============================================================= */
-@import 'responsive/_responsive_breakpoints.scss';
+@import 'basic_settings/_basic_settings.scss';
 
 /* ELEMENTS
 ============================================================= */
