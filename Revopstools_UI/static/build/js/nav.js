@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=$(nav).offset().top,o=function(){var o=$(window).scrollTop();o>n?$(nav).addClass("sticky"):$(nav).removeClass("sticky")};o(),$(window).scroll(function(){o()})});

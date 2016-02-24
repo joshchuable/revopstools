@@ -1235,9 +1235,14 @@ nav {
   -webkit-flex-flow: wrap;
   -ms-flex-flow: wrap;
   flex-flow: wrap;
-  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
+  left: 0;
+}
+nav .sticky {
+  position: fixed;
+  top: 0;
 }
 nav > a {
   font-size: 16px;

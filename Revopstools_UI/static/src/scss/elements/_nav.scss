@@ -7,9 +7,15 @@ nav {
 	justify-content: space-between;
 	flex-direction: row;
 	flex-flow: wrap;
-	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 100;
+	left: 0;
+
+	.sticky {
+		position: fixed;
+		top: 0;
+	}
 
 	> a {
 		font-size: 16px;
