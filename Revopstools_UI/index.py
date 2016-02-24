@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
 	return render_template("index.html")
 
+@app.route("/valueCPM")
+def valueCPM():
+	return render_template("valueCPM/valueCPM.html")
+
 @app.route("/profile/<username>")
 def profile(username):
 	return "Hey there %s" % username

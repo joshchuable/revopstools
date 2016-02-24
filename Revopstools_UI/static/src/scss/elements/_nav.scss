@@ -1,7 +1,7 @@
 nav {
 	background-color: $gray;
 	border-bottom: 1px solid $gray-dark;
-	height: 48px;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -11,12 +11,17 @@ nav {
 	top: 0;
 	width: 100%;
 
-	a {
+	> a {
+		font-size: 16px;
 		font-weight: 700;
-		color: $black;
+		color: $blue;
 		padding: 4px;
 		margin: 4px;
-		position: relative;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue-light;
+		}
 	}
 
 	ul {
@@ -25,6 +30,13 @@ nav {
 		a {
 			padding: 4px;
 			margin: 4px;
+			text-decoration: none;
+			color: $black;
+			position: relative;
+
+			&:hover {
+				color: $blue-light;
+			}
 		}
 	}
 
@@ -37,7 +49,5 @@ nav {
 	.nav-menu-right {
 		display: flex;
 		align-items: center;
-		// margin-left: auto;
-		// text-align: right;
 	}
 }

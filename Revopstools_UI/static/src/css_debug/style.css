@@ -5,6 +5,7 @@
 ============================================================= */
 body {
   font-size: 12px;
+  font-family: 'Lato', sans-serif;
   color: #1b1b1b;
   margin: 0;
 }
@@ -1216,9 +1217,9 @@ body {
 /* ELEMENTS
 ============================================================= */
 nav {
-  background-color: #c6c6c6;
-  border-bottom: 1px solid #adadad;
-  height: 48px;
+  background-color: #dadada;
+  border-bottom: 1px solid #a7a7a7;
+  height: 60px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1238,12 +1239,16 @@ nav {
   top: 0;
   width: 100%;
 }
-nav a {
+nav > a {
+  font-size: 16px;
   font-weight: 700;
-  color: #1b1b1b;
+  color: #0066cc;
   padding: 4px;
   margin: 4px;
-  position: relative;
+  text-decoration: none;
+}
+nav > a:hover {
+  color: #0080ff;
 }
 nav ul {
   list-style-type: none;
@@ -1251,6 +1256,12 @@ nav ul {
 nav ul a {
   padding: 4px;
   margin: 4px;
+  text-decoration: none;
+  color: #1b1b1b;
+  position: relative;
+}
+nav ul a:hover {
+  color: #0080ff;
 }
 nav .nav-menu-left {
   display: -webkit-flex;
