@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, methods
+from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
 import sqlalchemy as sa

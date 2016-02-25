@@ -1220,6 +1220,10 @@ body {
   margin: 0;
 }
 
+button {
+  border: none;
+}
+
 /* ELEMENTS
 ============================================================= */
 nav {
@@ -1304,6 +1308,7 @@ nav .nav-menu-right {
 .valueCPM_button:hover {
   background-color: #0080ff;
   border-bottom: 3px solid #004d99;
+  cursor: pointer;
 }
 
 /* MISC
