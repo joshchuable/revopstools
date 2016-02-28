@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"sitck",
+				"stickyNav"
+			],
+			[
+				"stick",
+				"stickyNav"
+			],
+			[
+				"scro",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"margin",
 				"margin-bottom"
 			],
@@ -44,22 +60,6 @@
 	"buffers":
 	[
 		{
-			"file": "index.py",
-			"settings":
-			{
-				"buffer_size": 281,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/index.html",
-			"settings":
-			{
-				"buffer_size": 246,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "gulpfile.js",
 			"settings":
 			{
@@ -68,10 +68,62 @@
 			}
 		},
 		{
+			"file": "static/src/js/nav.js",
+			"settings":
+			{
+				"buffer_size": 326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% extends \"base.html\" %}\n\n{% block content %}\n	<div class=\"container\">\n		<h1>This is the Value CPM Calculator.</h1>\n	</div>\n\n	Get Value CPMs\n{% endblock %}",
+			"file": "templates/valueCPM/valueCPM.html",
+			"file_size": 264,
+			"file_write_time": 131007662880000000,
+			"settings":
+			{
+				"buffer_size": 156,
+				"line_ending": "Unix",
+				"name": "valueCPM.html"
+			}
+		},
+		{
+			"file": "templates/contents.html",
+			"settings":
+			{
+				"buffer_size": 127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/nav.html",
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 2143,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "static/src/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 691,
+				"buffer_size": 725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/src/scss/grid/_foundation_grid.scss",
+			"settings":
+			{
+				"buffer_size": 19512,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,7 +131,31 @@
 			"file": "static/src/scss/custom_variables/_custom_variables.scss",
 			"settings":
 			{
-				"buffer_size": 210,
+				"buffer_size": 221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/src/scss/elements/_nav.scss",
+			"settings":
+			{
+				"buffer_size": 787,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/src/scss/elements/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/src/scss/basic_settings/_basic_settings.scss",
+			"settings":
+			{
+				"buffer_size": 88,
 				"line_ending": "Unix"
 			}
 		}
@@ -92,9 +168,13 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "",
+		"last_filter": "ins",
 		"selected_items":
 		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -124,7 +204,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 480.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -148,11 +228,25 @@
 		"/Users/rye.jones/Desktop/4-Code/revopstools",
 		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI",
 		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/build",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/build/css",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/build/js",
 		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src",
-		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss"
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss/basic_settings",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss/elements",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss/grid",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates/valueCPM"
 	],
 	"file_history":
 	[
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates/head.html",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates/footer.html",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/index.py",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates/base.html",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates/valueCPM/content.html",
+		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/templates/content.html",
 		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss/elements/_nav.scss",
 		"/Users/rye.jones/Desktop/4-Code/revopstools/Revopstools_UI/static/src/scss/scss.scss",
 		"/C/Users/RyeJ/Google Drive/! My Documents/@-5-Misc Sites/howtolearnchinese/@ Blog Posts/v2/Chinese Dictionaries - Reviewed.html",
@@ -228,7 +322,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -242,6 +336,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"button",
+			"input",
+			"button",
 			"WP_MEMORY_LIMIT",
 			"/var/www",
 			"40px",
@@ -307,71 +404,6 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 281,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 246,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								179,
-								179
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "gulpfile.js",
 					"semi_transient": false,
 					"settings":
@@ -383,8 +415,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								371,
+								371
 							]
 						],
 						"settings":
@@ -400,30 +432,173 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "static/src/scss/style.scss",
+					"buffer": 1,
+					"file": "static/src/js/nav.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 691,
+						"buffer_size": 326,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/valueCPM/valueCPM.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								127
+							]
+						],
+						"settings":
+						{
+							"auto_name": "valueCPM.html",
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja2).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/contents.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja2).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/nav.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "static/src/scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
 							]
 						],
 						"settings":
@@ -434,24 +609,111 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "static/src/scss/custom_variables/_custom_variables.scss",
+					"buffer": 7,
+					"file": "static/src/scss/grid/_foundation_grid.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 210,
+						"buffer_size": 19512,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "static/src/scss/custom_variables/_custom_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "static/src/scss/elements/_nav.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 142.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "static/src/scss/elements/_buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
 							]
 						],
 						"settings":
@@ -463,6 +725,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "static/src/scss/basic_settings/_basic_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 88,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -501,7 +791,7 @@
 		"rows":
 		[
 			0.0,
-			0.5,
+			0.442452668796,
 			1.0
 		]
 	},
@@ -552,7 +842,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
