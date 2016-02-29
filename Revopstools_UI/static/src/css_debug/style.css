@@ -14,6 +14,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  float: left;
 }
 
 .row {
@@ -1227,37 +1228,33 @@ button {
 /* ELEMENTS
 ============================================================= */
 nav {
-  background-color: #dadada;
-  border-bottom: 1px solid #a7a7a7;
-  height: 60px;
+  background-color: #220724;
+  border-right: 2px solid #f7f7f7;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-flex-flow: wrap;
   -ms-flex-flow: wrap;
   flex-flow: wrap;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  left: 0;
-}
-nav .sticky {
-  position: fixed;
-  top: 0;
+  -webkit-flex-grow: 1 1 50%;
+  -ms-flex-positive: 1 1 50%;
+  flex-grow: 1 1 50%;
+  width: 260px;
+  float: left;
 }
 nav > a {
   font-size: 16px;
   font-weight: 700;
-  color: #0066cc;
+  color: #f7f7f7;
   padding: 4px;
   margin: 4px;
   text-decoration: none;
@@ -1272,28 +1269,10 @@ nav ul a {
   padding: 4px;
   margin: 4px;
   text-decoration: none;
-  color: #1b1b1b;
-  position: relative;
+  color: #f7f7f7;
 }
 nav ul a:hover {
   color: #0080ff;
-}
-nav .nav-menu-left {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: auto;
-}
-nav .nav-menu-right {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .valueCPM_button {
