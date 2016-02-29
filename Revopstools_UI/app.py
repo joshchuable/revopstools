@@ -14,7 +14,7 @@ def index():
 def valueCPM():
 	return render_template("valueCPM/valueCPM.html")
 
-@app.route("/pyscripts/valueCPM_calc", methods=['POST'])
+@app.route("/pyscripts/valueCPM_calc", methods=['GET'])
 def valueCPM_calc():
 	# Get yesterday's date. Formatted as YYYY-MM-DD.
 	yesterday = datetime.datetime.strftime(datetime.datetime.now()-datetime.timedelta(1),'%Y-%m-%d')
@@ -58,6 +58,7 @@ def valueCPM_calc():
 	df = pd.read_sql(daily_by_tag_query, e)
 
 	output = df.to_csv(sep=",", index_label=False, index=False, header=True)
+	output.headers["Content-Disposition"] = "attachment; filename=Rubicon_Daily_%s" % yesterday
 
 	return output
 
