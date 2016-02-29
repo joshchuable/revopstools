@@ -1,4 +1,5 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, make_response
+from io import StringIO
 import numpy as np
 import pandas as pd
 import sqlalchemy as sa
@@ -57,10 +58,12 @@ def valueCPM_calc():
 
 	df = pd.read_sql(daily_by_tag_query, e)
 
-	output = df.to_csv(sep=",", index_label=False, index=False, header=True)
-	output.headers["Content-Disposition"] = "attachment; filename=Rubicon_Daily_%s" % yesterday
+	csv_file = df.to_csv(sep=",", index_label=False, index=False, header=True)
 
-	return output
+	response = make_response(csv_file)
+	response.headers["Content-Disposition"] = "attachment; filename=Rubicon_Daily_%s" % yesterday
+
+	return response
 
 
 if __name__ == "__main__":
