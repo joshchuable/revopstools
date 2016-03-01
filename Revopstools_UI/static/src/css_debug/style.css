@@ -15,6 +15,8 @@
   margin-left: auto;
   margin-right: auto;
   float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .row {
@@ -1233,30 +1235,24 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-flow: wrap;
-  -ms-flex-flow: wrap;
-  flex-flow: wrap;
-  -webkit-flex-grow: 1 1 50%;
-  -ms-flex-positive: 1 1 50%;
-  flex-grow: 1 1 50%;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 260px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
   float: left;
 }
 nav > a {
   font-size: 16px;
   font-weight: 700;
   color: #f7f7f7;
-  padding: 4px;
-  margin: 4px;
+  padding: 8px;
+  margin: 8px;
   text-decoration: none;
 }
 nav > a:hover {
@@ -1264,12 +1260,25 @@ nav > a:hover {
 }
 nav ul {
   list-style-type: none;
+  margin-top: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+nav ul li {
+  -webkit-flex-basis: 40px;
+  -ms-flex-preferred-size: 40px;
+  flex-basis: 40px;
 }
 nav ul a {
-  padding: 4px;
-  margin: 4px;
+  padding: 8px;
+  margin: 8px;
   text-decoration: none;
   color: #f7f7f7;
+  font-size: 16px;
 }
 nav ul a:hover {
   color: #0080ff;

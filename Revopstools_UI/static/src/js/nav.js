@@ -20,8 +20,9 @@
 // });
 
 $(document).ready(function() {
-	$('#nav').css('height', $(window).height()+'px');
-})
+	// $('#body').css('height', $(window).height()+'px');
+	$('#nav').css('min-height', $(window).height()+'px');
+});
 
 
 

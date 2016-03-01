@@ -2,20 +2,18 @@ nav {
 	background-color: $side-menu;
 	border-right: 2px solid $white;
 	display: flex;
-	align-items: stretch;
-	justify-content: flex-start;
 	flex-direction: column;
-	flex-flow: wrap;
-	flex-grow: 1 1 50%;
+	align-items: flex-start;
 	width: 260px;
+	order: -1;
 	float: left;
 
 	> a {
 		font-size: 16px;
 		font-weight: 700;
 		color: $white;
-		padding: 4px;
-		margin: 4px;
+		padding: 8px;
+		margin: 8px;
 		text-decoration: none;
 
 		&:hover {
@@ -25,12 +23,20 @@ nav {
 
 	ul {
 		list-style-type: none;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+
+		li {
+			flex-basis: 40px;
+		}
 
 		a {
-			padding: 4px;
-			margin: 4px;
+			padding: 8px;
+			margin: 8px;
 			text-decoration: none;
 			color: $white;
+			font-size: 16px;
 
 			&:hover {
 				color: $blue-light;
