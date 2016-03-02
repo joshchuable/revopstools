@@ -15,12 +15,10 @@
   margin-left: auto;
   margin-right: auto;
   float: left;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .row {
-  max-width: rem-calc(1200);
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1227,51 +1225,61 @@ button {
   border: none;
 }
 
+ul, menu, dir {
+  padding: 0;
+  margin: 0;
+}
+
 /* ELEMENTS
 ============================================================= */
 nav {
   background-color: #220724;
   border-right: 2px solid #f7f7f7;
+  float: left;
+  width: 260px;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  width: 260px;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-  float: left;
-}
-nav > a {
-  font-size: 16px;
-  font-weight: 700;
-  color: #f7f7f7;
-  padding: 8px;
-  margin: 8px;
-  text-decoration: none;
-}
-nav > a:hover {
-  color: #0080ff;
 }
 nav ul {
   list-style-type: none;
-  margin-top: 20px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 nav ul li {
-  -webkit-flex-basis: 40px;
-  -ms-flex-preferred-size: 40px;
-  flex-basis: 40px;
+  -webkit-flex: 1 0 60px;
+  -ms-flex: 1 0 60px;
+  flex: 1 0 60px;
+  padding: 4px;
+  margin-left: 50px;
+}
+nav ul .logo-li {
+  margin-top: 10px;
+  padding: 0px;
+}
+nav ul .logo-li .logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f7f7f7;
+  text-decoration: none;
+  border-bottom: 2px solid #f7f7f7;
 }
 nav ul a {
   padding: 8px;
@@ -1282,6 +1290,15 @@ nav ul a {
 }
 nav ul a:hover {
   color: #0080ff;
+}
+nav ul .divider {
+  font-size: 20px;
+  color: #f7f7f7;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-left: 0px;
+  padding: 0px;
 }
 
 .valueCPM_button {
@@ -1297,6 +1314,20 @@ nav ul a:hover {
   background-color: #0080ff;
   border-bottom: 3px solid #004d99;
   cursor: pointer;
+}
+
+body section {
+  padding: 20px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  border-bottom: 3px solid #b7b7b7;
+  border-right: 1px solid #bcbcbc;
+  border-left: 1px solid #bcbcbc;
+}
+
+body div {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /* MISC

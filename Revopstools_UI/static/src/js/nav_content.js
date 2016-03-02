@@ -20,25 +20,12 @@
 // });
 
 $(document).ready(function() {
-	// $('#body').css('height', $(window).height()+'px');
 	$('#nav').css('min-height', $(window).height()+'px');
-});
-
-
-
-$(document).ready(function() {
-	$('.valueCPM_button').click(function() {
-		$.ajax({
-			url: '/pyscripts/valueCPM_calc',
-			type: 'GET',
-			success: function(response) {
-				console.log("File download will begin momentarily...");
-				var url = '/pyscripts/valueCPM_calc?data=' + response;
-				window.location = url;
-			},
-			error: function(error) {
-				console.log(error);
-			}
-		});
+	$(window).resize(function() {
+		$('#nav').css('min-height', $(window).height()+'px');
+	});
+	$('#content').css('width', ($(window).width()-$('#nav').width())+'px');
+	$(window).resize(function() {
+		$('#content').css('width', ($(window).width()-$('#nav').width())+'px');
 	});
 });

@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	sass = require('gulp-ruby-sass'),
+	concat = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['scripts', 'watch']);
@@ -10,7 +11,8 @@ gulp.task('default', ['scripts', 'watch']);
 gulp.task('scripts', function(){
 	// Source files
 	gulp.src('static/src/js/*.js')
-	.pipe(uglify())
+	.pipe(concat('scripts.js'))
+	// .pipe(uglify())
 	// Output folder
 	.pipe(gulp.dest('static/build/js/'));
 });
