@@ -1,0 +1,53 @@
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav {
+	order: 1;
+	flex: 0 0 260px;
+}
+
+main {
+	order: 2;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.flex-base {
+	display: flex;
+}
+
+.grid-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	align-items: center;
+}
+
+.grid-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.grid-cell {
+	flex: 1;
+}
+
+.grid-cell-center {
+	align-self: center;
+}
+
+.grid-gutter {
+	margin-left: 1em;
+	margin-right: 1em;
+}

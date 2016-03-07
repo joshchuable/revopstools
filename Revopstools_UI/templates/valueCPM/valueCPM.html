@@ -1,41 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<div class="row">
-		<div class="12-large columns">
-			<section>
-				<h1>This is the Value CPM Calculator.</h1>
-				<button class="valueCPM_button">Get Value CPMs</button>
-			</section>
-		</div>
+	<div class="grid-column grid-section">
+		<h1>This is the Value CPM Calculator.</h1>
+		<button class="valueCPM_button">Get Value CPMs</button>
 	</div>
 
-	<div class="row">
-		<div class="large-12 columns">
-			<section>
-				<h1>These are some dummy content blocks</h1>
-				<p>They are full of nonsense text...</p>
-			</section>
-		</div>
+	<div class="grid-column grid-section">
+		<h1>These are some dummy content blocks</h1>
+		<p>They are full of nonsense text...</p>
 	</div>
-
-	<div class="row">
-		<div class="large-6 columns">
-			<section>
-				<h1>...but some of them...</h1>
-			</section>
-		</div>
-		<div class="large-6 columns">
-			<section>
-				<h1>...just might contain...</h1>
-				<h3>SECRETS</h3>
-			</section>
-		</div>
-	</div>
-
-
-
-
-
 	
+	<div class="grid-row grid-section">
+		<h1 class="grid-cell">...but some of them...</h1>
+	</div>
+	
+	<div class="grid-row">
+		<h1 class="grid-cell grid-section grid-gutter">...just might contain...</h1>
+		<h2 class="grid-cell grid-section grid-gutter">SECRETS</h2>
+	</div>
 {% endblock %}

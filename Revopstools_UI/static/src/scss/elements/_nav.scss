@@ -1,8 +1,6 @@
 nav {
 	background-color: $side-menu;
 	border-right: 2px solid $white;
-	float: left;
-	width: 260px;
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
@@ -18,15 +16,14 @@ nav {
 		li {
 			flex: 1 0 60px;
 			padding: 4px;
-			margin-left: 50px;
+			margin-left: 20px;
 		}
 
 		.logo-li {
-			// margin-left: 0px;
-			// margin-right: 20px;
-			// align-self: center;
 			margin-top: 10px;
 			padding: 0px;
+			align-self: center;
+			margin-left: 0px;
 
 			.logo-text {
 				font-size: 20px;
@@ -34,6 +31,10 @@ nav {
 				color: $white;
 				text-decoration: none;
 				border-bottom: 2px solid $white;
+
+				&:hover {
+					color: $blue-light;
+				}
 			}
 		}
 
@@ -57,7 +58,6 @@ nav {
 			color: $white;
 			align-self: center;
 			margin-left: 0px;
-			// margin-right: 20px;
 			padding: 0px;
 		}
 	}
