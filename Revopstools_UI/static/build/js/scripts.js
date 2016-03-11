@@ -1,11 +1,20 @@
 $(document).ready(function() {
+	$('#progress-bar').progressbar({
+		value: false
+	});
+	$('.button-progress').click(function() {
+		$('.notification-container').toggleClass('hidden');
+		$('#progress-bar').progressbar( "enable" );
+	});
+});
+$(document).ready(function() {
 	$('#nav').css('min-height', $(window).height()+'px');
 	$(window).resize(function() {
 		$('#nav').css('min-height', $(window).height()+'px');
 	});
 });
 $(document).ready(function() {
-	$('.valueCPM_button').click(function() {
+	$('#valueCPM_button').click(function() {
 		$.ajax({
 			url: '/pyscripts/valueCPM_calc',
 			type: 'GET',

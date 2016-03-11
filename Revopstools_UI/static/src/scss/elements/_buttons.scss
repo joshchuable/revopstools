@@ -1,9 +1,10 @@
-.valueCPM_button {
-	padding: 8px 12px;
+.blue-button {
+	padding: 8px 14px;
+	margin: 2px;
 	background-color: $blue;
 	border-bottom: 3px solid darken($blue-dark,2);
 	font-size: 14px;
-	border-radius: 8px;
+	border-radius: 6px;
 	text-decoration: none;
 	color: $white;
 
@@ -12,8 +13,4 @@
 		border-bottom: 3px solid $blue-dark;
 		cursor: pointer;
 	}
-}
-
-.random {
-	
 }

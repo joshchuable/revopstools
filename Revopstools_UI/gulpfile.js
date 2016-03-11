@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('default', ['scripts', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'build_css', 'watch']);
 
 // Scripts Task
 // Uglifies JS

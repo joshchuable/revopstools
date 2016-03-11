@@ -109,6 +109,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #1b1b1b;
   margin: 0;
+  background-color: rgba(150, 180, 231, 0.12);
 }
 
 button {
@@ -125,6 +126,10 @@ ul, menu, dir {
 
 .text-center {
   text-align: center;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* ELEMENTS
@@ -203,29 +208,66 @@ nav ul .divider {
   padding: 0px;
 }
 
-.valueCPM_button {
-  padding: 8px 12px;
+.blue-button {
+  padding: 8px 14px;
+  margin: 2px;
   background-color: #0066cc;
   border-bottom: 3px solid #00478f;
   font-size: 14px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   color: #f7f7f7;
 }
-.valueCPM_button:hover {
+.blue-button:hover {
   background-color: #0080ff;
   border-bottom: 3px solid #004d99;
   cursor: pointer;
 }
 
 body .grid-section {
-  padding: 20px;
+  padding: 10px;
   background: #e0e0e0;
   border-radius: 4px;
   border-bottom: 3px solid #b7b7b7;
   border-right: 1px solid #bcbcbc;
   border-left: 1px solid #bcbcbc;
   box-shadow: 0px 0px 3px rgba(27, 27, 27, 0.5);
+}
+
+main {
+  position: relative;
+}
+
+.notification-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#progress-bar {
+  border: none;
+  position: relative;
+  color: #3BEB3E;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 0;
+}
+
+.ui-progressbar-value {
+  background: #0080ff;
+  border-radius: 2px;
+}
+
+#progress-bar-label {
+  font-weight: 700;
+  color: #1b1b1b;
+  background: transparent;
 }
 
 /* MISC

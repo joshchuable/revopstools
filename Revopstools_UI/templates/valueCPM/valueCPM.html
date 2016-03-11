@@ -1,22 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+	<div class="notification-container hidden">
+		<div id="notification"></div>
+		<div id="progress-bar">
+			<div id="progress-bar-label">Downloading...</div>
+		</div>
+	</div>
+
 	<div class="grid-column grid-section">
 		<h1>This is the Value CPM Calculator.</h1>
-		<button class="valueCPM_button">Get Value CPMs</button>
+		<button id="valueCPM_button" class="blue-button">Get Value CPMs</button>
+		<button class="blue-button button-progress">Enable that progressbar</button>
 	</div>
 
 	<div class="grid-column grid-section">
 		<h1>These are some dummy content blocks</h1>
 		<p>They are full of nonsense text...</p>
-	</div>
-	
-	<div class="grid-row grid-section">
-		<h1 class="grid-cell">...but some of them...</h1>
-	</div>
-	
-	<div class="grid-row">
-		<h1 class="grid-cell grid-section grid-gutter">...just might contain...</h1>
-		<h2 class="grid-cell grid-section grid-gutter">SECRETS</h2>
 	</div>
 {% endblock %}

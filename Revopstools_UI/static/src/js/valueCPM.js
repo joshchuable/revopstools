@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.valueCPM_button').click(function() {
+	$('#valueCPM_button').click(function() {
 		$.ajax({
 			url: '/pyscripts/valueCPM_calc',
 			type: 'GET',
