@@ -12,7 +12,7 @@ def valueCPM_calc():
 	two_days_ago = datetime.datetime.strftime(datetime.datetime.now()-datetime.timedelta(2),'%Y-%m-%d')
 
 	# Estabilsh database connection. Follows the convention "[engine_type]://[user]:[passwd]@[host]".
-	e = sa.create_engine("mysql+pymysql://rye.jones:2E7GP6ZZ6@jupiter.afcv.net")
+	e = sa.create_engine("mysql+pymysql://USER:PASSWORD@jupiter.afcv.net")
 
 	# The wildcard character '%' must be escaped with a '%'.
 	daily_by_tag = """
